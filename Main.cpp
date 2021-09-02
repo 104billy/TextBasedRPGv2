@@ -170,7 +170,7 @@ void Combat()
             int tempPlayer = rand() % 100 + 1;
             int acc = rand() % 100 + 1;
 
-            if (tempPlayer >= 85 && acc >= accuracy)
+            if (tempPlayer >= 85 && acc <= accuracy)
             {
                 playerDamage = playerDamage * 2;
                 std::cout << "You Dealt a Critical Hit for x2 Damage!!\n";
